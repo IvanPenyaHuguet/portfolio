@@ -14,6 +14,8 @@
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@fullpage/react-fullpage": "^0.1.19",
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
     "formik": "^2.2.9",
     "next": "11.0.1",
     "next-i18next": "^8.5.4",
