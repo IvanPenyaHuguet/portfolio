@@ -1,4 +1,6 @@
 import SectionWrapper from "./sections/SectionWrapper";
 import InitialSection from "./sections/InitialSection";
+import Container from "./layouts/container/Container";
+import MainHead from "./head/MainHead";
 
-module.exports = { SectionWrapper, InitialSection };
+export { SectionWrapper, InitialSection, Container, MainHead };
