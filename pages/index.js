@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import ReactFullpage from "../lib/fullpage/Wrapper";
+import { InitialSection } from "../components/Exports";
+
 import { useTranslation } from "next-i18next";
 
 export default function Index() {
@@ -17,6 +19,7 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ReactFullpage>
+        <InitialSection />
         <section className="section">
           <div className={styles.container}>
             <main className={styles.main}>
