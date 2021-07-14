@@ -1,6 +1,6 @@
-import ReactFullpage from "../lib/fullpage/Wrapper";
-import { InitialSection, MainHead } from "../components/Exports";
-import GlobalStylesCustom from "../styles/GlobalStylesCustom";
+import ReactFullpage from "lib/fullpage/Wrapper";
+import { InitialSection, MainHead } from "components/Exports";
+import GlobalStylesCustom from "styles/GlobalStylesCustom";
 
 import { useTranslation } from "next-i18next";
 
