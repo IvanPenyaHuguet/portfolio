@@ -20,10 +20,12 @@ export default function Index() {
     <div className="App">
       <GlobalStylesCustom />
       <MainHead />
-      <ReactFullpage>
-        <InitialSection />
-        <InitialSection />
-      </ReactFullpage>
+      <main className="MainApp">
+        <ReactFullpage>
+          <InitialSection />
+          <InitialSection />
+        </ReactFullpage>
+      </main>
     </div>
   );
 }
