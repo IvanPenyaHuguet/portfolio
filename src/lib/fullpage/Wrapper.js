@@ -1,12 +1,16 @@
 import ReactFullpage from "@fullpage/react-fullpage";
+import { Links } from "lib/utils/Links";
+import { useTranslation } from "next-i18next";
 
 // For plugins
 const pluginWrapper = () => {};
 
-export default function fullpageWrapper({ children }) {
+export default function FullpageWrapper({ children }) {
+  const { t } = useTranslation("common");
+
   return (
     <ReactFullpage
-      anchors={["Initial", "Introduction", "Technologies", "LARS"]}
+      anchors={Links(t).map((link) => link.anchor)}
       sectionSelector="section"
       scrollingSpeed={1000}
       scrollBar="true"

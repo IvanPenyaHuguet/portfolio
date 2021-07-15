@@ -1,5 +1,13 @@
 {
   "head": {
     "title": "Iván Peña Portfolio"
+  },
+  "nav": {
+    "link": {
+      "presetation": "Sobre mi",
+      "introduction": "Introduction",
+      "knowledge": "Conocimientos",
+      "contact": "Contact"
+    }
   }
 }
