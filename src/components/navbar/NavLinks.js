@@ -4,7 +4,7 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 
 const Nav = styled.nav({
-  ...tw`flex flex-row justify-around items-center`,
+  ...tw`flex flex-row justify-around items-center gap-4`,
 });
 
 const NavLink = styled.a({

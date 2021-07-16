@@ -17,7 +17,7 @@ export async function getStaticProps({ locale }) {
 export default function Index() {
   const { t } = useTranslation("common");
   return (
-    <div className="App">
+    <div className="App" id="App">
       <GlobalStylesCustom />
       <MainHead />
       <NavBar />

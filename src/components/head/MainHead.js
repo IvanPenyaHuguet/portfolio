@@ -9,7 +9,7 @@ export default function MainHead() {
         s
         content="Portfolio del desarrollador de software Iván Peña Huguet, especializado en JavaScript y Java"
       />
-      <link rel="icon" href="/favicon.ico" />
+      <link id="favicon" rel="icon" href="favicon/favicon.gif" />
     </Head>
   );
 }

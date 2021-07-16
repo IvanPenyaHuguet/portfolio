@@ -49,7 +49,7 @@ const styles = {
   },
 };
 
-const NavLink = styled.il({
+const NavLink = styled.a({
   ...tw``,
 });
 

@@ -1,0 +1,18 @@
+{
+    "head": {
+        "title": "Iván Peña Portfolio"
+    },
+    "nav": {
+        "link": {
+            "presetation": "Sobre mi",
+            "introduction": "Introduccion",
+            "knowledge": "Conocimientos",
+            "contact": "Contacto"
+        }
+    },
+    "navbar": {
+        "nav": {
+            "title": "Iván Peña Huguet"
+        }
+    }
+}

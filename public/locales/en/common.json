@@ -9,5 +9,10 @@
       "knowledge": "Conocimientos",
       "contact": "Contact"
     }
+  },
+  "navbar": {
+    "nav": {
+      "title": "Iván Peña Huguet"
+    }
   }
 }

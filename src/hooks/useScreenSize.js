@@ -15,7 +15,7 @@ const getScreenResolution = () => {
     window.innerWidth < breakpoints.md.max
   )
     return "md";
-  else if (window.innerWidth >= breakpoints.md) return "lg";
+  else if (window.innerWidth >= breakpoints.md.max) return "lg";
 };
 
 const useScreenSize = () => {
