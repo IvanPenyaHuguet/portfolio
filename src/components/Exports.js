@@ -10,6 +10,8 @@ import NavBar from "./navbar/Nav";
 import NavLinks from "./navbar/NavLinks";
 import MobileMenu from "./navbar/MobileMenu";
 import MyPhoto from "./imgcomponents/MyPhoto";
+import AboutMeText from "./texts/AboutMeText";
+import IntroductionText from "./texts/IntroductionText";
 
 export {
   SectionWrapper,
@@ -24,4 +26,6 @@ export {
   NavLinks,
   MobileMenu,
   MyPhoto,
+  AboutMeText,
+  IntroductionText,
 };

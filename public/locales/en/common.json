@@ -15,5 +15,10 @@
     "nav": {
       "title": "Iván Peña Huguet"
     }
+  },
+  "section": {
+    "aboutme": {
+      "title": "About me!"
+    }
   }
 }

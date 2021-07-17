@@ -6,9 +6,6 @@ const BgContainer = styled.div({
   ...tw`w-full h-full`,
 });
 
-const TextContainer = styled.div({
-  ...tw``,
-});
 const Container = styled.div({
   ...tw`z-10`,
 });

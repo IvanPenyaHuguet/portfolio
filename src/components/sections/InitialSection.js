@@ -1,4 +1,4 @@
-import { SectionWrapper, MyPhoto } from "components/Exports";
+import { SectionWrapper, MyPhoto, IntroductionText } from "components/Exports";
 import { useTranslation } from "next-i18next";
 import tw, { styled } from "twin.macro";
 
@@ -32,8 +32,7 @@ export default function InitialSection() {
       <BgContainer>
         <Container>
           <MyPhoto />
-          <TextContainer>aabaatavaacsv</TextContainer>
-          <TextContainer>aabaatavaacsv</TextContainer>
+          <IntroductionText />
         </Container>
       </BgContainer>
     </SectionWrapper>
