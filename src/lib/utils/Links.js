@@ -15,8 +15,13 @@ export const Links = (t) => [
     href: "/#knowledge",
   },
   {
+    title: t("nav.link.projects"),
+    anchor: "projects",
+    href: "/#projects",
+  },
+  /* {
     title: t("nav.link.contact"),
     anchor: "contact",
     href: "/#contact",
-  },
+  }, */
 ];

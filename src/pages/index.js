@@ -1,5 +1,13 @@
 import ReactFullpage from "lib/fullpage/Wrapper";
-import { InitialSection, MainHead, NavBar } from "components/Exports";
+import {
+  InitialSection,
+  MainHead,
+  NavBar,
+  AboutMeSection,
+  KnowledgeSection,
+  ProjectsSection,
+  ContactSection,
+} from "components/Exports";
 import GlobalStylesCustom from "styles/GlobalStylesCustom";
 
 import { useTranslation } from "next-i18next";
@@ -24,7 +32,10 @@ export default function Index() {
       <main className="MainApp" id="MainApp">
         <ReactFullpage>
           <InitialSection />
-          <InitialSection />
+          <AboutMeSection />
+          <KnowledgeSection />
+          <ProjectsSection />
+          <ContactSection />
         </ReactFullpage>
       </main>
     </div>

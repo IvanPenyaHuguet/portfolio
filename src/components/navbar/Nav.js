@@ -4,9 +4,9 @@ import { useResponsiveContext } from "hooks/HookExports";
 import { useTranslation } from "next-i18next";
 
 const Header = styled.header({
-  ...tw`fixed w-screen shadow-md h-16 bg-gray-300 bg-opacity-10 px-2
-  backdrop-filter backdrop-blur
-  border-white border-t-2 border-l-2 border-opacity-50`,
+  ...tw`fixed w-screen shadow-md h-16 bg-gray-300 bg-opacity-10 px-2 z-50
+  backdrop-filter backdrop-blur-sm
+  border-white border-opacity-50`,
 });
 const HeaderContainer = styled.div({
   ...tw`w-10/12 md:w-11/12 flex flex-row justify-between items-center h-16 mx-auto`,
