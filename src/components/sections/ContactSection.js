@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import tw, { styled } from "twin.macro";
 
 const BgContainer = styled.div({
-  ...tw`w-full h-full`,
+  ...tw`bg-blue-500 w-full h-full`,
 });
 
 const TextContainer = styled.div({

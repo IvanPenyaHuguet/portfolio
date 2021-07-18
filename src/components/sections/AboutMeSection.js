@@ -21,19 +21,19 @@ const BgContainer = styled.div({
 const containerVariants = {
   xs: {
     width: "400px",
-    padding: "172px 0",
+    padding: "130px 0",
   },
   sm: {
     width: "500px",
-    padding: "182px 0",
+    padding: "140px 0",
   },
   md: {
     width: "700px",
-    padding: "200px 0",
+    padding: "170px 0",
   },
   lg: {
     width: "1000px",
-    padding: "230px 0",
+    padding: "190px 0",
   },
 };
 
@@ -43,7 +43,7 @@ const Container = styled.div(() => [
 ]);
 
 const InsideContainer = styled.div({
-  ...tw`/* bg-blue-500 */ h-full`,
+  ...tw`h-full`,
 });
 
 export default function InitialSection() {

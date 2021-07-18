@@ -8,13 +8,16 @@ const Text = styled.span({
 const Paragraph = styled.p({
   ...tw``,
 });
+const Paragraph2 = styled.p({
+  ...tw``,
+});
 
 export default function IntroductionText() {
   const { t } = useTranslation("common");
   return (
     <Text>
-      <Paragraph>First line</Paragraph>
-      <Paragraph>Second line of full text</Paragraph>
+      <Paragraph>Welcome!</Paragraph>
+      <Paragraph2>Second line of full text</Paragraph2>
     </Text>
   );
 }
