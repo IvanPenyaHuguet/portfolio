@@ -1,5 +1,13 @@
 import ReactFullpage from "lib/fullpage/Wrapper";
-import { InitialSection, MainHead } from "components/Exports";
+import {
+  InitialSection,
+  MainHead,
+  NavBar,
+  AboutMeSection,
+  KnowledgeSection,
+  ProjectsSection,
+  ContactSection,
+} from "components/Exports";
 import GlobalStylesCustom from "styles/GlobalStylesCustom";
 
 import { useTranslation } from "next-i18next";
@@ -17,13 +25,19 @@ export async function getStaticProps({ locale }) {
 export default function Index() {
   const { t } = useTranslation("common");
   return (
-    <div className="App">
+    <div className="App" id="App">
       <GlobalStylesCustom />
       <MainHead />
-      <ReactFullpage>
-        <InitialSection />
-        <InitialSection />
-      </ReactFullpage>
+      <NavBar />
+      <main className="MainApp" id="MainApp">
+        <ReactFullpage>
+          <InitialSection />
+          <AboutMeSection />
+          <KnowledgeSection />
+          <ProjectsSection />
+          <ContactSection />
+        </ReactFullpage>
+      </main>
     </div>
   );
 }
