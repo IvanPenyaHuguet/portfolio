@@ -4,7 +4,7 @@ import { useResponsiveContext } from "hooks/HookExports";
 import { useTranslation } from "next-i18next";
 
 const Header = styled.header({
-  ...tw`fixed w-screen shadow-md h-16 bg-gray-300 bg-opacity-10 px-2 z-50
+  ...tw`fixed w-screen shadow-md h-16 bg-gray-300 bg-opacity-10 px-2 z-50 font-title
   backdrop-filter backdrop-blur-sm
   border-white border-opacity-50`,
 });

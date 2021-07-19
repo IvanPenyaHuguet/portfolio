@@ -12,6 +12,8 @@ import MobileMenu from "./navbar/MobileMenu";
 import MyPhoto from "./imgcomponents/MyPhoto";
 import AboutMeText from "./texts/AboutMeText";
 import IntroductionText from "./texts/IntroductionText";
+import IntroductionChangeableText from "./texts/IntroductionChangeableText";
+import TextGhostAnimation from "./animations/TextGhostAnimation";
 
 export {
   SectionWrapper,
@@ -28,4 +30,6 @@ export {
   MyPhoto,
   AboutMeText,
   IntroductionText,
+  TextGhostAnimation,
+  IntroductionChangeableText,
 };

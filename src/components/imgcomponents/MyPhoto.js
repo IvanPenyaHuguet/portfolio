@@ -10,7 +10,7 @@ const PhotoContainer = styled.div({
   transformStyle: "preserve-3d",
 });
 const PositionContainer = styled.div({
-  ...tw`absolute top-36 right-36`,
+  ...tw`absolute top-36 right-1/4`,
 });
 const photoStyles = {
   transform: "translateZ(40px)",

@@ -19,6 +19,15 @@
   "section": {
     "aboutme": {
       "title": "About me!"
+    },
+    "intoduction": {
+      "firstintline": "Welcome!"
+    },
+    "introduction": {
+      "firstintline": "Welcome!",
+      "secondline": {
+        "firstwords": "When you are looking for "
+      }
     }
   }
 }
