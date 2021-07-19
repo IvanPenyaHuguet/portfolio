@@ -2,6 +2,7 @@ import tw, { styled } from "twin.macro";
 import { Links } from "lib/utils/Links";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
+import { SelectLanguage } from "components/Exports";
 
 const Nav = styled.nav({
   ...tw`flex flex-row justify-around items-center gap-4`,
@@ -20,6 +21,7 @@ export default function NavLinks() {
           <NavLink>{link.title}</NavLink>
         </Link>
       ))}
+      <SelectLanguage />
     </Nav>
   );
 }

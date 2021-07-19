@@ -9,8 +9,8 @@ const phrasesArray = ["innovation", "learning"];
 const Wrapper = styled.div({
   ...tw`font-code font-medium tracking-wide
     text-4xl
-    xs:text-xl
-    sm:text-xl
+    xs:text-2xl
+    sm:text-2xl
     smland:text-xl
     mdland:text-2xl mdland:leading-10
   `,
