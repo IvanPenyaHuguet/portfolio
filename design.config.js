@@ -1,5 +1,6 @@
 const breakpoints = {
   xs: {
+    min: 0,
     max: 450,
   },
   sm: {

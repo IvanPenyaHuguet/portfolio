@@ -1,5 +1,5 @@
 import { keyframes } from "@emotion/react";
-import { styled } from "twin.macro";
+import tw, { styled } from "twin.macro";
 
 const animation = keyframes`
   0% {
@@ -15,12 +15,12 @@ const animation = keyframes`
   50% {
     opacity: 1; 
     filter: blur(0); 
-    transform: translateY(0)   
+    transform: translateY(0) skewY(0) skewX(0) rotateZ(0) 
   }
   75% {
     opacity: 1;  
     filter: blur(0);  
-    transform: translateY(0)  
+    transform: translateY(0) skewY(0) skewX(0) rotateZ(0)  
   }
   100% {
     opacity: 0;
@@ -30,6 +30,14 @@ const animation = keyframes`
 `;
 
 const Wrapper = styled.span({
+  ...tw`
+    xs:block 
+    sm:block 
+    smland:block  
+    mdland:block 
+    lg:inline-block
+    xl:inline-block
+  `,
   display: "inline-block",
   animationName: animation,
   animationDuration: "6s",

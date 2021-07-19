@@ -7,7 +7,13 @@ import tw, { styled } from "twin.macro";
 const phrasesArray = ["innovation", "learning"];
 
 const Wrapper = styled.div({
-  ...tw`font-code text-4xl font-medium tracking-wide`,
+  ...tw`font-code font-medium tracking-wide
+    text-4xl
+    xs:text-xl
+    sm:text-xl
+    smland:text-xl
+    mdland:text-2xl mdland:leading-10
+  `,
 });
 const InitialWords = styled.span({});
 
