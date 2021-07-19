@@ -30,4 +30,10 @@ const colors = {
   },
 };
 
-module.exports = { colors, breakpoints };
+const fonts = {
+  code: "Fira Code", // Mono
+  text: "Vollkorn", // Serif almost sans variable
+  title: "Libre Franklin", // Sans, variable, easy to read
+};
+
+module.exports = { colors, breakpoints, fonts };
