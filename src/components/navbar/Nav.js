@@ -13,7 +13,9 @@ const HeaderContainer = styled.div({
 });
 
 const Title = styled.h1({
-  ...tw`text-4xl font-semibold`,
+  ...tw`text-4xl font-semibold
+  md:text-2xl
+  mdland:text-2xl`,
 });
 
 export default function NavBar() {

@@ -2,13 +2,16 @@ import { useState, useEffect, useRef } from "react";
 import tw, { styled } from "twin.macro";
 import { Links } from "lib/utils/Links";
 import { useTranslation } from "next-i18next";
-import Link from "next/link";
+/* import Link from "next/link"; */
 import { SelectLanguage } from "components/Exports";
 import LinkWrapper from "components/navbar/LinkWrapper";
 
 const Nav = styled.nav({
   ...tw`flex flex-row justify-around items-center relative
-    text-xl gap-2 align-bottom`,
+    text-xl gap-2 align-bottom whitespace-nowrap
+    md:text-base md:gap-1
+    mdland:text-base mdland:gap-1
+    `,
 });
 
 //neon blue: #2bd2ff

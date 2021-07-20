@@ -13,10 +13,10 @@ module.exports = {
       },
       sm: {
         min: "451px",
-        max: "800px",
+        max: "799px",
       },
       md: {
-        min: "801px",
+        min: "800px",
         max: "1200px",
       },
       lg: {
@@ -27,10 +27,10 @@ module.exports = {
         min: "1851px",
       },
       mdland: {
-        raw: "(orientation: landscape) and (min-width:801px) and (max-width:1200px) and (max-height: 500px)",
+        raw: "(orientation: landscape) and (min-width:800px) and (max-width:1200px) and (max-height: 500px)",
       },
       smland: {
-        raw: "(orientation: landscape) and (min-width:451px) and (max-width:800px) and (max-height: 400px)",
+        raw: "(orientation: landscape) and (min-width:451px) and (max-width:799px) and (max-height: 400px)",
       },
     },
   },
