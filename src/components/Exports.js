@@ -5,6 +5,7 @@ import KnowledgeSection from "./sections/KnowledgeSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import ContactSection from "./sections/ContactSection";
 import Container from "./layouts/container/Container";
+import Tooltip from "./layouts/tooltip/Tooltip";
 import MainHead from "./head/MainHead";
 import NavBar from "./navbar/Nav";
 import NavLinks from "./navbar/NavLinks";
@@ -12,6 +13,9 @@ import MobileMenu from "./navbar/MobileMenu";
 import MyPhoto from "./imgcomponents/MyPhoto";
 import AboutMeText from "./texts/AboutMeText";
 import IntroductionText from "./texts/IntroductionText";
+import IntroductionChangeableText from "./texts/IntroductionChangeableText";
+import TextGhostAnimation from "./animations/TextGhostAnimation";
+import SelectLanguage from "./forms/SelectLanguage";
 
 export {
   SectionWrapper,
@@ -28,4 +32,8 @@ export {
   MyPhoto,
   AboutMeText,
   IntroductionText,
+  TextGhostAnimation,
+  IntroductionChangeableText,
+  Tooltip,
+  SelectLanguage,
 };

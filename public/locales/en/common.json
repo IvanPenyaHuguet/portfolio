@@ -4,9 +4,9 @@
   },
   "nav": {
     "link": {
-      "presetation": "Sobre mi",
+      "presetation": "About Me",
       "introduction": "Introduction",
-      "knowledge": "Conocimientos",
+      "knowledge": "Knowledges",
       "contact": "Contact",
       "projects": "Projects"
     }
@@ -19,6 +19,22 @@
   "section": {
     "aboutme": {
       "title": "About me!"
+    },
+    "introduction": {
+      "firstintline": "Welcome!",
+      "secondline": {
+        "firstwords": "When you are looking for ",
+        "innovation": "innovation",
+        "motivation": "motivation",
+        "commitment": "commitment",
+        "overcoming": "overcoming",
+        "cooperation": "cooperation"
+      }
     }
+  },
+  "language": {
+    "spanish": "Spanish",
+    "english": "English",
+    "select": "Select language"
   }
 }

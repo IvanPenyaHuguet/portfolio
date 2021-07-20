@@ -1,3 +1,4 @@
 import useResponsiveContext from "./context/useResponsiveContext";
+import { useInterval } from "./useInterval";
 
-export { useResponsiveContext };
+export { useResponsiveContext, useInterval };

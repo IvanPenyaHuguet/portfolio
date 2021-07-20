@@ -6,11 +6,20 @@ import CVPhoto from "media/images/fotoCVWeb.jpg";
 import { useResponsiveContext } from "hooks/HookExports";
 
 const PhotoContainer = styled.div({
-  ...tw`p-3 bg-white shadow-md rounded-md`,
+  ...tw`p-3 bg-white rounded-md`,
+  boxShadow:
+    "0 4px 6px -1px rgba(0, 0, 0, 0.30), 0 2px 4px -1px rgba(0, 0, 0, 0.15)",
   transformStyle: "preserve-3d",
 });
 const PositionContainer = styled.div({
-  ...tw`absolute top-36 right-36`,
+  ...tw`absolute 
+    top-0 right-0 transform-none 
+    xs:static xs:self-center  
+    sm:static sm:self-center
+    smland:static  
+    mdland:static
+    lg:top-0 lg:right-0     
+  `,
 });
 const photoStyles = {
   transform: "translateZ(40px)",
@@ -27,7 +36,7 @@ export default function MyPhoto() {
         <PhotoContainer>
           <Image
             src={CVPhoto}
-            alt="Personnal photo"
+            alt="Personal photo"
             css={photoStyles}
             width={size.width}
             height={size.height}

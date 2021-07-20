@@ -18,11 +18,15 @@ const BgContainer = styled.div({
   },
 });
 
-const TextContainer = styled.div({
-  ...tw``,
-});
 const Container = styled.div({
-  ...tw`z-10`,
+  ...tw`z-10 relative m-auto transform top-1/2 -translate-y-1/2    
+    w-8/12 h-3/5
+    xs:flex xs:flex-col xs:justify-between xs:items-start xs:w-11/12 xs:h-5/6
+    sm:flex sm:flex-col sm:justify-between sm:items-start sm:w-11/12 sm:h-5/6
+    smland:flex smland:flex-row smland:justify-between smland:items-center smland:w-full smland:h-5/6 smland:px-2
+    mdland:w-11/12 mdland:flex mdland:justify-between mdland:items-center mdland:flex-row-reverse
+    lg:w-9/12 lg:h-3/5   
+  `,
 });
 
 export default function InitialSection() {

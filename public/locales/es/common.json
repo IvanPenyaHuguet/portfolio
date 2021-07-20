@@ -4,8 +4,8 @@
   },
   "nav": {
     "link": {
-      "presetation": "Sobre mi",
-      "introduction": "Introduccion",
+      "presetation": "Sobre mí",
+      "introduction": "Introducción",
       "knowledge": "Conocimientos",
       "contact": "Contacto",
       "projects": "Proyectos"
@@ -15,5 +15,26 @@
     "nav": {
       "title": "Iván Peña Huguet"
     }
+  },
+  "section": {
+    "aboutme": {
+      "title": "¡Mi historia!"
+    },
+    "introduction": {
+      "firstintline": "Bienvenido!",
+      "secondline": {
+        "firstwords": "Cuando lo importante es ",
+        "innovation": "la innovación",
+        "motivation": "la motivación",
+        "commitment": "el compromiso",
+        "overcoming": "la superación",
+        "cooperation": "la cooperación"
+      }
+    }
+  },
+  "language": {
+    "select": "Cambiar lenguaje",
+    "spanish": "Español",
+    "english": "Inglés"
   }
 }
