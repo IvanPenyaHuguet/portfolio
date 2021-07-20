@@ -2,12 +2,14 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import { Links } from "lib/utils/Links";
 import { useTranslation } from "next-i18next";
 import { useResponsiveContext } from "hooks/HookExports";
+import { useRouter } from "next/router";
 
 // For plugins
 const pluginWrapper = () => {};
 
 export default function FullpageWrapper({ children }) {
   const { t } = useTranslation("common");
+  const router = useRouter();
 
   return (
     <ReactFullpage
@@ -18,6 +20,9 @@ export default function FullpageWrapper({ children }) {
       autoScrolling={useResponsiveContext === "lg" ? "true" : "false"}
       render={(comp) => {
         return <ReactFullpage.Wrapper>{children}</ReactFullpage.Wrapper>;
+      }}
+      onLeave={(origin, destination, direction) => {
+        router.replace("/#" + destination.anchor);
       }}
     />
   );

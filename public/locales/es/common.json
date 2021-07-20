@@ -4,8 +4,8 @@
   },
   "nav": {
     "link": {
-      "presetation": "Sobre mi",
-      "introduction": "Introduccion",
+      "presetation": "Sobre mí",
+      "introduction": "Introducción",
       "knowledge": "Conocimientos",
       "contact": "Contacto",
       "projects": "Proyectos"
@@ -18,18 +18,23 @@
   },
   "section": {
     "aboutme": {
-      "title": "About me!"
+      "title": "¡Mi historia!"
     },
     "introduction": {
-      "firstintline": "Welcome!",
+      "firstintline": "Bienvenido!",
       "secondline": {
-        "firstwords": "When you are looking for "
+        "firstwords": "Cuando lo importante es ",
+        "innovation": "la innovación",
+        "motivation": "la motivación",
+        "commitment": "el compromiso",
+        "overcoming": "la superación",
+        "cooperation": "la cooperación"
       }
     }
   },
   "language": {
-    "select": "language.select",
-    "spanish": "language.spanish",
-    "english": "language.english"
+    "select": "Cambiar lenguaje",
+    "spanish": "Español",
+    "english": "Inglés"
   }
 }

@@ -6,11 +6,7 @@ import { Tooltip } from "components/Exports";
 import { useResponsiveContext } from "hooks/HookExports";
 
 const LanguageSelectorContainer = styled.div({
-  ...tw`relative`,
-});
-
-const LanguageSelector = styled.select({
-  ...tw`relative top-1/2 transform`,
+  ...tw`relative text-lg`,
 });
 
 export default function SelectLanguage() {
@@ -37,8 +33,9 @@ export default function SelectLanguage() {
             GB: t("language.english"),
           }}
           showSelectedLabel={showWidth}
-          showOptionsLabel={showWidth}
-          selectedSize={20}
+          showOptionLabel={showWidth}
+          selectedSize={25}
+          optionsSize={40}
         />
       </Tooltip>
     </LanguageSelectorContainer>

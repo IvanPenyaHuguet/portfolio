@@ -4,8 +4,6 @@ import { TextGhostAnimation } from "components/Exports";
 import { useTranslation } from "next-i18next";
 import tw, { styled } from "twin.macro";
 
-const phrasesArray = ["innovation", "learning"];
-
 const Wrapper = styled.div({
   ...tw`font-code font-medium tracking-wide
     text-4xl
@@ -18,9 +16,16 @@ const Wrapper = styled.div({
 const InitialWords = styled.span({});
 
 export default function IntroductionChangeableText() {
+  const { t } = useTranslation("common");
+  const phrasesArray = [
+    t("section.introduction.secondline.innovation"),
+    t("section.introduction.secondline.motivation"),
+    t("section.introduction.secondline.commitment"),
+    t("section.introduction.secondline.overcoming"),
+    t("section.introduction.secondline.cooperation"),
+  ];
   const [itemShowed, setItemShowed] = useState(phrasesArray[0].toUpperCase());
   const [count, setCount] = useState(1);
-  const { t } = useTranslation("common");
 
   useInterval(() => {
     setItemShowed(
