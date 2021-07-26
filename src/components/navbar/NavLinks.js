@@ -14,7 +14,6 @@ const Nav = styled.nav({
     `,
 });
 
-//neon blue: #2bd2ff
 const NavLink = styled.a({
   ...tw`px-2 py-3`,
 });
@@ -30,7 +29,7 @@ const NavIndicator = styled.div(() => [
 ]);
 
 export default function NavLinks() {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
   const refActive = useRef({
     width: 0,
     left: 0,
@@ -63,7 +62,9 @@ export default function NavLinks() {
         >
           {/* # HashRouting not working consistently for now
           <Link href={link.href} passHref scroll={false}> */}
-          <NavLink href={link.href}>{link.title}</NavLink>
+          <NavLink href={(i18n.language == "en" ? "en" : "") + link.href}>
+            {link.title}
+          </NavLink>
           {/* </Link> */}
         </LinkWrapper>
       ))}
