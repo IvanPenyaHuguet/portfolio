@@ -96,6 +96,9 @@ export default function GlobalStylesCustom() {
           animation-iteration-count: infinite;
           animation-direction: alternate;
         }
+        .linkactive {
+          color: #0f0 !important;
+        },
       `}
     />
   );

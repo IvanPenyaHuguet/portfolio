@@ -17,13 +17,15 @@ export default function LinkWrapper({
 
   useEffect(() => {
     if (
-      router.asPath === href ||
-      (router.asPath === "/" && href === "/#introduction")
+      router.asPath === "/" + href ||
+      router.asPath === "/en" + href ||
+      (router.asPath === "/" && href === "/#introduction") ||
+      (router.asPath === "/en" && href === "/en#introduction")
     ) {
       // Some hydration problem on dev, plus 10 to minimize it
       const object = {
         width:
-          router.asPath === "/"
+          router.asPath === "/" || router.asPath === "/en"
             ? wrapperRef.current.offsetWidth + 10
             : wrapperRef.current.offsetWidth,
         left: wrapperRef.current.offsetLeft,
