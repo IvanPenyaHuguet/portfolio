@@ -2,7 +2,7 @@ import { useState } from "react";
 import ReactTilt from "react-universal-tilt";
 import tw, { styled } from "twin.macro";
 import Image from "next/image";
-import CVPhoto from "media/images/fotoCVWeb.jpg";
+import CVPhoto from "../../../public/images/fotoCVWeb.jpg";
 import { useResponsiveContext } from "hooks/HookExports";
 
 const PhotoContainer = styled.div({
