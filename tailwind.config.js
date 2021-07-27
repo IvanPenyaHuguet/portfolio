@@ -6,6 +6,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: { colors: designConf.colors, fontFamily: designConf.fonts },
+    textIndent: {
+      1: "0.25rem",
+      2: "0.5rem",
+    },
+    textShadow: {
+      default: "0 2px 5px rgba(0, 0, 0, 0.5)",
+      lg: "0 2px 10px rgba(0, 0, 0, 0.5)",
+    },
     screens: {
       xs: {
         min: "0px",

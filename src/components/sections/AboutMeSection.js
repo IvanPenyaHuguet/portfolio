@@ -20,12 +20,12 @@ const BgContainer = styled.div({
 
 const containerVariants = {
   xs: {
-    width: "400px",
+    width: "100%",
     padding: "130px 0",
   },
   sm: {
-    width: "500px",
-    padding: "140px 0",
+    width: "400px",
+    padding: "130px 0",
   },
   md: {
     width: "700px",

@@ -22,8 +22,8 @@ export default function AboutMeText() {
     <TextContainer>
       <Title>{t("section.aboutme.title")}</Title>
       <Text>
-        <Paragraph>First</Paragraph>
-        <Paragraph>Second</Paragraph>
+        <Paragraph>{t("section.aboutme.first")}</Paragraph>
+        <Paragraph>{t("section.aboutme.second")}</Paragraph>
       </Text>
     </TextContainer>
   );

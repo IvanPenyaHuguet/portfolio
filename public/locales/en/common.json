@@ -18,7 +18,9 @@
   },
   "section": {
     "aboutme": {
-      "title": "About me!"
+      "title": "About me!",
+      "first": "first",
+      "second": "second"
     },
     "introduction": {
       "firstintline": "Welcome!",
@@ -29,6 +31,30 @@
         "commitment": "commitment",
         "overcoming": "overcoming",
         "cooperation": "cooperation"
+      }
+    },
+    "knowledge": {
+      "cards": {
+        "js": {
+          "title": "JavaScript",
+          "description": "Es mi lenguaje favorito con el que he practicado bastante y he realizado mucha formación, sobre todo con JS moderno como Angular y React en cliente o para desarrollo de servidores en Node. Dispongo conocimientos de TypeScript y de las últimas novedades del lenguaje. Por último, he estado trabajando con ExtJS de Sencha para el desarrollo de interfaces.",
+          "description2": "a"
+        },
+        "react": {
+          "title": "React",
+          "description": "aa",
+          "description2": "aa"
+        },
+        "java": {
+          "title": "Java",
+          "description2": "aa",
+          "description": "aa"
+        },
+        "spring": {
+          "title": "Spring",
+          "description": "aa",
+          "description2": "aa"
+        }
       }
     }
   },
