@@ -19,8 +19,9 @@
   "section": {
     "aboutme": {
       "title": "¡Mi historia!",
-      "first": "First",
-      "second": "Second"
+      "first": "Soy desarrollador web full stack, especializado mayormente en tecnologías JavaScript (React sobre todo, pero también Angular y Node) aunque para la parte del servidor prefiero utilizar lenguajes más completos y con mayor trayectoria como Java.",
+      "second": "Después de estudiar Química, me di cuenta de que no era exactamente lo mío y empecé a realizar pequeños desarrollos y scripts en python enfocados en el campo de la domótica, poco después dado lo mucho que me gustaba decidí cambiar ya que sentía que la informática estaba siendo el presente y será el futuro mejorando las vidas de las personas y no me lo iba a perder.",
+      "third": "Realicé el fp superior de desarrollo web, dónde aprendí mayormente Java y por mi cuenta decidí especializarme en las tecnologías front-end de JavaScript, porque creo que son el futuro de las aplicaciones. Actualmente busco crecer y ampliar mis conocimientos en dicho campo, creando aplicaciones más innovadoras."
     },
     "introduction": {
       "firstintline": "Bienvenido!",
