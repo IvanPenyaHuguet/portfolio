@@ -18,7 +18,10 @@
   },
   "section": {
     "aboutme": {
-      "title": "¡Mi historia!"
+      "title": "¡Mi historia!",
+      "first": "Soy desarrollador web full stack, especializado mayormente en tecnologías JavaScript (React sobre todo, pero también Angular y Node) aunque para la parte del servidor prefiero utilizar lenguajes más completos y con mayor trayectoria como Java.",
+      "second": "Después de estudiar Química, me di cuenta de que no era exactamente lo mío y empecé a realizar pequeños desarrollos y scripts en python enfocados en el campo de la domótica, poco después dado lo mucho que me gustaba decidí cambiar ya que sentía que la informática estaba siendo el presente y será el futuro mejorando las vidas de las personas y no me lo iba a perder.",
+      "third": "Realicé el fp superior de desarrollo web, dónde aprendí mayormente Java y por mi cuenta decidí especializarme en las tecnologías front-end de JavaScript, porque creo que son el futuro de las aplicaciones. Actualmente busco crecer y ampliar mis conocimientos en dicho campo, creando aplicaciones más innovadoras."
     },
     "introduction": {
       "firstintline": "Bienvenido!",
@@ -29,6 +32,30 @@
         "commitment": "el compromiso",
         "overcoming": "la superación",
         "cooperation": "la cooperación"
+      }
+    },
+    "knowledge": {
+      "cards": {
+        "js": {
+          "title": "JavaScript",
+          "description": "Es mi lenguaje favorito con el que he practicado bastante y he realizado mucha formación, sobre todo con JS moderno como Angular y React en cliente o para desarrollo de servidores en Node.",
+          "description2": "Dispongo conocimientos de TypeScript y de las últimas novedades del lenguaje. Por último, he estado trabajando con ExtJS de Sencha para el desarrollo de interfaces."
+        },
+        "spring": {
+          "title": "Spring",
+          "description": "He realizado varios proyectos en este framework de java tan popular, también lo utilicé cuando estuve en la empresa pfsGroup realizando nuevos desarrollos y arreglando problemas.",
+          "description2": "Sé trabajar con todas las anotaciones y además utilizando Spring Security, Hibernate (JPA) y una REST API."
+        },
+        "react": {
+          "title": "React",
+          "description": "Framework moderno para la creación de SPA que he utilizado mayoritariamente con hooks, la nueva forma de trabajar de react.",
+          "description2": "Lo aprendí de forma autodidáctica porque me parece la librería con mayor potencial para la creación de páginas, he realizado cursos como el  de Udemy Modern React with Redux por Stephen Grider y  actualmente haciendo el de Full Stack Open."
+        },
+        "java": {
+          "title": "Java",
+          "description": "Es un lenguaje muy sólido, con una sintáxis con la que soy muy familiar ya que he realizado todos los estudios en este lenguaje.",
+          "description2": "Estuve trabajando con él durante mi estancia en pfsGroup y he realizado varios proyectos, disponibles abajo utilizándolo en el back-end."
+        }
       }
     }
   },

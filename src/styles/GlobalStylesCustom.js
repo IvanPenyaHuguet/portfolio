@@ -7,6 +7,7 @@ export default function GlobalStylesCustom() {
         ::-webkit-scrollbar {
           width: 12px;
           border-radius: 20px;
+          z-index: 1000;
         }
         ::-webkit-scrollbar-track {
           background: #f0efef;
@@ -98,7 +99,10 @@ export default function GlobalStylesCustom() {
         }
         .linkactive {
           color: #0f0 !important;
-        },
+        }
+        .svgShadow {
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.3));
+        }
       `}
     />
   );
