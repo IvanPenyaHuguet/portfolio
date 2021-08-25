@@ -15,7 +15,7 @@ export default function CardJS() {
   const { t } = useTranslation("common");
 
   return (
-    <CardContainer score={4} color={theme`colors.js`} bgtext="'JavaScript'">
+    <CardContainer score={5} color={theme`colors.js`} bgtext="'JavaScript'">
       {(mouseHover) => (
         <>
           <LogoContainer>
