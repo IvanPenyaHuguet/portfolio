@@ -1,4 +1,4 @@
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 import tw, { styled } from "twin.macro";
 import { IntroductionChangeableText } from "components/Exports";
 
@@ -13,7 +13,7 @@ const Text = styled.article({
 
 const Paragraph = styled.h4({
   ...tw`font-code leading-loose tracking-wider
-    text-7xl font-bold 
+    text-7xl font-bold
     xs:text-2xl
     sm:text-3xl
     smland:text-2xl

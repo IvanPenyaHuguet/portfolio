@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { isServer, isClient } from "lib/utils/Common";
-import { breakpoints } from "../../design.config";
+import { isServer, isClient } from "../lib";
+import { breakpoints } from "../styles/breakpoints";
 
 const getScreenResolution = () => {
   if (isServer) return "lg";
@@ -16,6 +16,7 @@ const getScreenResolution = () => {
   )
     return "md";
   else if (window.innerWidth >= breakpoints.md.max) return "lg";
+  return "xl";
 };
 
 const useScreenSize = () => {

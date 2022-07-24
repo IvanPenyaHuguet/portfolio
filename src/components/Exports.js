@@ -6,7 +6,7 @@ import ProjectsSection from "./sections/ProjectsSection";
 import ContactSection from "./sections/ContactSection";
 import Container from "./layouts/container/Container";
 import Tooltip from "./layouts/tooltip/Tooltip";
-import MainHead from "./head/MainHead";
+import MainHead from "./head/main-head";
 import NavBar from "./navbar/Nav";
 import NavLinks from "./navbar/NavLinks";
 import MobileMenu from "./navbar/MobileMenu";

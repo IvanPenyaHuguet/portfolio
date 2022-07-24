@@ -92,8 +92,8 @@ const createAlert = ({ title, data, type, timer = 4500 }) => {
 
   main.insertAdjacentHTML("afterbegin", html);
 
-  //Control de los event handlers para múltiples alertas, boton de cierre y cierre automático
-  for (let item of main.getElementsByClassName(className)) {
+  // Control de los event handlers para múltiples alertas, boton de cierre y cierre automático
+  for (const item of main.getElementsByClassName(className)) {
     item.onanimationend = animationEnd(item, timer);
     item.children[2].onclick = () => animationEnd(item, 0);
   }

@@ -1,4 +1,4 @@
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 import tw, { styled } from "twin.macro";
 
 const TextContainer = styled.article({
@@ -7,7 +7,7 @@ const TextContainer = styled.article({
 
 const Title = styled.h2({
   ...tw`tracking-wider font-title
-  text-5xl font-bold mb-5 
+  text-5xl font-bold mb-5
   sm:text-4xl xs:text-3xl`,
 });
 const Text = styled.div({

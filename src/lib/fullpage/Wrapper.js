@@ -1,6 +1,6 @@
 import ReactFullpage from "@fullpage/react-fullpage";
 import { Links } from "lib/utils/Links";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 import { useResponsiveContext } from "hooks/HookExports";
 import { useRouter } from "next/router";
 

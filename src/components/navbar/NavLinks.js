@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import tw, { styled } from "twin.macro";
 import { Links } from "lib/utils/Links";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 /* import Link from "next/link"; */
 import { SelectLanguage } from "components/Exports";
 import LinkWrapper from "components/navbar/LinkWrapper";

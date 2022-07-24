@@ -1,7 +1,7 @@
 import tw, { styled } from "twin.macro";
 import { NavLinks, MobileMenu } from "components/Exports";
 import { useResponsiveContext } from "hooks/HookExports";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 
 const Header = styled.header({
   ...tw`fixed w-screen shadow-md h-16 bg-gray-300 bg-opacity-10 px-2 z-50 font-title

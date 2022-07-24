@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useInterval } from "hooks/HookExports";
 import { TextGhostAnimation } from "components/Exports";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 import tw, { styled } from "twin.macro";
 
 const Wrapper = styled.div({

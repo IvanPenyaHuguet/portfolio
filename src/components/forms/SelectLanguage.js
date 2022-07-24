@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 import tw, { styled } from "twin.macro";
 import ReactFlagsSelect from "react-flags-select";
 import { useRouter } from "next/router";
@@ -24,7 +24,7 @@ export default function SelectLanguage({
 
   const onLanguageChange = (code) => {
     const newLang = code === "ES" ? "es" : "en";
-    i18n.changeLanguage(newLang);    
+    i18n.changeLanguage(newLang);
     router.push(
       router.pathname,
       router.pathname,
@@ -34,7 +34,7 @@ export default function SelectLanguage({
       router.pathname,
       router.pathname,
       { locale: newLang }
-    );    
+    );
   };
 
   return (

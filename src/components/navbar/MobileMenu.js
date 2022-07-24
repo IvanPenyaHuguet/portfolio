@@ -2,7 +2,7 @@
 import Menu from "react-burger-menu/lib/menus/slide";
 import { useState } from "react";
 import { Links } from "lib/utils/Links";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 import { SelectLanguage } from "components/Exports";
 import { useRouter } from "next/router";
 import tw, { styled } from "twin.macro";
