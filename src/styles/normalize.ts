@@ -273,6 +273,10 @@ Add the correct display in Chrome and Safari.
   summary {
     display: list-item;
   }
+
+  a:-webkit-any-link {
+    color: inherit;
+  }
 `;
 
 export { NormalizeCss };

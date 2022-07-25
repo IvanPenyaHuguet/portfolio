@@ -36,7 +36,7 @@ module.exports = {
   ],
   rules: {
     '@emotion/pkg-renaming': 'error',
-    '@emotion/jsx-import': 'error',
+    '@emotion/jsx-import': 'off',
     '@emotion/no-vanilla': 'error',
     '@emotion/import-from-emotion': 'error',
     '@emotion/styled-import': 'error',

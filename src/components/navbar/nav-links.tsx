@@ -1,11 +1,24 @@
 import { useState, useRef, MouseEvent } from 'react';
+import { NavHashLink } from '@xzar90/react-router-hash-link';
 import styled from '@emotion/styled';
 import { Links } from 'lib/utils/links';
+// import LinkWrapper from './link-wrapper';
 import { useTranslation } from 'react-i18next';
-/* import Link from "next/link"; */
-import { SelectLanguage } from 'components/Exports';
-import LinkWrapper from 'components/navbar/LinkWrapper';
 import { Theme } from '@emotion/react';
+import { LinkPosition } from './nav-models';
+import { useLocation } from 'react-router-dom';
+import LinkWrapper from './link-wrapper';
+
+type NavIndicatorProps = {
+  width?: number;
+  left?: number;
+  theme?: Theme;
+};
+
+type NavLinkProps = {
+  theme?: Theme;
+  active: boolean;
+};
 
 const Nav = styled.nav(({ theme }) => ({
   display: 'flex',
@@ -30,15 +43,10 @@ const Nav = styled.nav(({ theme }) => ({
   }
 }));
 
-const NavLink = styled.a(({ theme }) => ({
-  padding: `${theme.spacings.medium} ${theme.spacings.large}`
+const NavLink = styled.div(({ theme, active }: NavLinkProps) => ({
+  padding: `${theme?.spacings.medium ?? 0} ${theme?.spacings.large ?? 0}`,
+  color: (active ? 'green' : 'red') + ' !important'
 }));
-
-type NavIndicatorProps = {
-  width?: number;
-  left?: number;
-  theme?: Theme;
-};
 
 const NavIndicator = styled.div((props: NavIndicatorProps) => ({
   position: 'absolute',
@@ -54,15 +62,19 @@ const NavIndicator = styled.div((props: NavIndicatorProps) => ({
 }));
 
 export default function NavLinks() {
-  const { t, i18n } = useTranslation('common');
-  const refActive = useRef({
+  const { t } = useTranslation();
+  const location = useLocation();
+  const refActive = useRef<LinkPosition>({
     width: 0,
     left: 0
   });
 
-  const [indicator, setIndicator] = useState({ width: 0, left: 0 });
+  const [indicator, setIndicator] = useState<LinkPosition>({
+    width: 0,
+    left: 0
+  });
 
-  const handleWrapperClick = (e: MouseEvent<HTMLButtonElement>) => {
+  const handleWrapperClick = (e: MouseEvent<HTMLDivElement>) => {
     setIndicator({
       width: e.currentTarget.offsetWidth - 16,
       left: e.currentTarget.offsetLeft + 8
@@ -77,6 +89,25 @@ export default function NavLinks() {
     <Nav>
       <NavIndicator width={indicator.width} left={indicator.left} />
       {Links(t).map((link, i) => (
+        <div
+          key={i}
+          onMouseEnter={handleWrapperClick}
+          onMouseLeave={handleMouseLeave}
+        >
+          <LinkWrapper
+            link={link}
+            setIndicator={setIndicator}
+            refActive={refActive}
+          >
+            <NavLink active={location.pathname + location.hash === link.href}>
+              <NavHashLink to={link.href} smooth>
+                {link.title}
+              </NavHashLink>
+            </NavLink>
+          </LinkWrapper>
+        </div>
+      ))}
+      {/* {Links(t).map((link, i) => (
         <LinkWrapper
           key={i}
           onMouseEnter={handleWrapperClick}
@@ -86,14 +117,15 @@ export default function NavLinks() {
           refActive={refActive}
         >
           {/* # HashRouting not working consistently for now
-          <Link href={link.href} passHref scroll={false}> */}
-          <NavLink href={(i18n.language === 'en' ? 'en' : '') + link.href}>
+          <Link href={link.href} passHref scroll={false}>
+          <HashLink to="/some/path#with-hash-fragment">{link.title}</HashLink>
+          */}
+      {/* <NavLink href={(i18n.language === 'en' ? 'en' : '') + link.href}>
             {link.title}
           </NavLink>
-          {/* </Link> */}
         </LinkWrapper>
-      ))}
-      <SelectLanguage />
+      ))} */}
+      {/* <SelectLanguage /> */}
     </Nav>
   );
 }

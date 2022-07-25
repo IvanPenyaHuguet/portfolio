@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { MobileMenu } from 'components/Exports';
+// import { MobileMenu } from 'components/Exports';
 import NavLinks from './nav-links';
 import { useResponsive } from '@hooks/index';
 import { useTranslation } from 'react-i18next';
@@ -57,7 +57,9 @@ export default function NavBar() {
           </HeaderContainer>
         </Header>
       ) : (
-        <MobileMenu />
+        {
+          /* <MobileMenu /> */
+        }
       )}
     </>
   );
