@@ -5,7 +5,7 @@ const colors = {
   black: "black",
   white: "white",
   error: "#da0101",
-  lightgray: "#f6f6f6",
+  lightGray: "#f6f6f6",
   js: "#F7DF1E",
   java: "#ca3132",
   react: "#00d8ff",
@@ -13,7 +13,8 @@ const colors = {
   alert: {
     error: "#ff7272",
     success: "#b5ead7",
-  }
+  },
+  softGray: 'rgba(209, 213, 219, 0.1)',
 };
 
 export { colors };

@@ -10,7 +10,11 @@ const spacings = {
 
 
 const shadows = {
-
+  normal: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)'
 }
 
-export { shadows, spacings };
+const filters = {
+  blurNormal: 'blur(0.5rem)'
+}
+
+export { shadows, spacings, filters };

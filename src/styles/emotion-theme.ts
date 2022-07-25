@@ -1,13 +1,15 @@
-import { colors, fonts, breakpoints, borders, shadows, spacings } from "@styles/index";
+import { colors, fonts, breakpoints, media, borders, shadows, spacings, filters } from "@styles/index";
 
 
 const baseThemeProps = {
   colors,
   breakpoints,
+  media,
   fonts,
   borders,
   shadows,
-  spacings
+  spacings,
+  filters
 }
 
 
@@ -18,5 +20,6 @@ const lightThemeProps = {
 const darkThemeProps = {
   ...baseThemeProps
 };
+
 
 export {lightThemeProps, darkThemeProps};

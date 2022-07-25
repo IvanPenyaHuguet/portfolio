@@ -1,7 +1,7 @@
 /* import { fallDown as Menu } from "react-burger-menu"; */
 import Menu from "react-burger-menu/lib/menus/slide";
 import { useState } from "react";
-import { Links } from "lib/utils/Links";
+import { Links } from "lib/utils/links";
 import { useTranslation } from "react-i18next";
 import { SelectLanguage } from "components/Exports";
 import { useRouter } from "next/router";

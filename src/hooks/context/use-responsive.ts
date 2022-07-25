@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { ResponsiveContext } from "contexts/ResponsiveContext";
+import { ResponsiveContext } from "@contexts/index";
 
-export default function useResponsiveContext() {
+export default function useResponsive() {
   const { resolution } = useContext(ResponsiveContext);
   return resolution;
 }

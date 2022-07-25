@@ -1,4 +1,6 @@
-export const Links = (t) => [
+import { TFunction } from "i18next";
+
+export const Links = (t: TFunction) => [
   {
     title: t("nav.link.introduction"),
     anchor: "introduction",
