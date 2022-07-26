@@ -2,12 +2,12 @@ import { useState, useRef, MouseEvent } from 'react';
 import { NavHashLink } from '@xzar90/react-router-hash-link';
 import styled from '@emotion/styled';
 import { Links } from 'lib/utils/links';
-// import LinkWrapper from './link-wrapper';
 import { useTranslation } from 'react-i18next';
 import { Theme } from '@emotion/react';
 import { LinkPosition } from './nav-models';
 import { useLocation } from 'react-router-dom';
 import LinkWrapper from './link-wrapper';
+import { SelectLanguage } from '@components/index';
 
 type NavIndicatorProps = {
   width?: number;
@@ -107,25 +107,7 @@ export default function NavLinks() {
           </LinkWrapper>
         </div>
       ))}
-      {/* {Links(t).map((link, i) => (
-        <LinkWrapper
-          key={i}
-          onMouseEnter={handleWrapperClick}
-          onMouseLeave={handleMouseLeave}
-          link={link}
-          setIndicator={setIndicator}
-          refActive={refActive}
-        >
-          {/* # HashRouting not working consistently for now
-          <Link href={link.href} passHref scroll={false}>
-          <HashLink to="/some/path#with-hash-fragment">{link.title}</HashLink>
-          */}
-      {/* <NavLink href={(i18n.language === 'en' ? 'en' : '') + link.href}>
-            {link.title}
-          </NavLink>
-        </LinkWrapper>
-      ))} */}
-      {/* <SelectLanguage /> */}
+      <SelectLanguage />
     </Nav>
   );
 }

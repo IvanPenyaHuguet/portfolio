@@ -13,7 +13,6 @@ import AboutMeText from "./texts/AboutMeText";
 import IntroductionText from "./texts/IntroductionText";
 import IntroductionChangeableText from "./texts/IntroductionChangeableText";
 import TextGhostAnimation from "./animations/TextGhostAnimation";
-import SelectLanguage from "./forms/SelectLanguage";
 import CardJS from "./cards/CardJS";
 import CardReact from "./cards/CardReact";
 import CardJava from "./cards/CardJava";
@@ -43,7 +42,6 @@ export {
   TextGhostAnimation,
   IntroductionChangeableText,
   Tooltip,
-  SelectLanguage,
   CardJS,
   GroupCardKnowledge,
   DescriptionContainer,
