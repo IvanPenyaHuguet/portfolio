@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-// import { MobileMenu } from 'components/Exports';
+import MobileMenu from './mobile-menu';
 import NavLinks from './nav-links';
 import { useResponsive } from '@hooks/index';
 import { useTranslation } from 'react-i18next';
@@ -49,7 +49,7 @@ export default function NavBar() {
 
   return (
     <>
-      {deviceSize === 'lg' || deviceSize === 'md' ? (
+      {deviceSize === 'lg' || deviceSize === 'md' || deviceSize === 'xl' ? (
         <Header id='header'>
           <HeaderContainer>
             <Title>{t('navbar.nav.title')}</Title>
@@ -57,9 +57,7 @@ export default function NavBar() {
           </HeaderContainer>
         </Header>
       ) : (
-        {
-          /* <MobileMenu /> */
-        }
+        <MobileMenu />
       )}
     </>
   );

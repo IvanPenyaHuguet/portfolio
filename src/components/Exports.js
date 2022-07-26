@@ -7,7 +7,6 @@ import ContactSection from "./sections/ContactSection";
 import Container from "./layouts/container/Container";
 import Tooltip from "./layouts/tooltip/Tooltip";
 import MainHead from "./head/main-head";
-import MobileMenu from "./navbar/MobileMenu";
 import MyPhoto from "./imgcomponents/MyPhoto";
 import AboutMeText from "./texts/AboutMeText";
 import IntroductionText from "./texts/IntroductionText";
@@ -35,7 +34,6 @@ export {
   ContactSection,
   Container,
   MainHead,
-  MobileMenu,
   MyPhoto,
   AboutMeText,
   IntroductionText,
