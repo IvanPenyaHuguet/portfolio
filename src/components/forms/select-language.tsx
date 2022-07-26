@@ -5,7 +5,7 @@ import { useResponsive } from '@hooks/index';
 import { Dropdown, DropdownProps } from 'primereact/dropdown';
 import EsFlag from '@media/svg/flags/es';
 import GbFlag from '@media/svg/flags/gb';
-import { TFunction } from 'i18next';
+import { ClassNames } from '@emotion/react';
 
 type Country = {
   label: string;
@@ -19,6 +19,12 @@ const LanguageSelectorContainer = styled.div(({ theme }) => ({
   lineHeight: theme.fonts.line.xlarge
 }));
 
+const FlagLabelContainer = styled.div(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  gap: theme.spacings.small
+}));
+
 const SelectedCountryTemplate = (
   props?: DropdownProps,
   showWidth?: boolean
@@ -28,19 +34,19 @@ const SelectedCountryTemplate = (
   }
   const country = props.value as Country;
   return (
-    <div>
+    <FlagLabelContainer>
       {country.flag}
       {showWidth && <span>{country.label}</span>}
-    </div>
+    </FlagLabelContainer>
   );
 };
 
 const OptionCountryTemplate = (option: Country, showWidth?: boolean) => {
   return (
-    <div>
+    <FlagLabelContainer>
       {option.flag}
       {showWidth && <span>{option.label}</span>}
-    </div>
+    </FlagLabelContainer>
   );
 };
 
@@ -71,22 +77,41 @@ export default function SelectLanguage() {
 
   const handleLanguageChange = (event: { value: Country }) => {
     console.log(event);
+    const oldLanguage = language;
     setLanguage(event.value);
-    i18n.changeLanguage(event.value.code).catch(console.error);
+    i18n.changeLanguage(event.value.code).catch((err) => {
+      console.error(err);
+      setLanguage(oldLanguage);
+    });
   };
 
   return (
     <LanguageSelectorContainer>
-      <Dropdown
-        value={language}
-        options={LanguagesOptions}
-        onChange={handleLanguageChange}
-        placeholder={t('language.select')}
-        valueTemplate={(_opt, props) =>
-          SelectedCountryTemplate(props, showWidth)
-        }
-        itemTemplate={(opt) => OptionCountryTemplate(opt as Country, showWidth)}
-      />
+      <ClassNames>
+        {({ css }) => (
+          <Dropdown
+            className={css({
+              width: showWidth ? '155px' : '69px',
+              '& .p-dropdown-trigger': {
+                width: showWidth ? '42px' : '25px'
+              },
+              '& .p-dropdown-label': {
+                padding: showWidth ? '10px' : '6px'
+              }
+            })}
+            value={language}
+            options={LanguagesOptions}
+            onChange={handleLanguageChange}
+            placeholder={t('language.select')}
+            valueTemplate={(_opt, props) =>
+              SelectedCountryTemplate(props, showWidth)
+            }
+            itemTemplate={(opt) =>
+              OptionCountryTemplate(opt as Country, showWidth)
+            }
+          />
+        )}
+      </ClassNames>
     </LanguageSelectorContainer>
   );
 }
