@@ -6,12 +6,14 @@ export default function MainHead() {
 
   return (
     <Helmet>
-      <title>{t('navbar.nav.title')}</title>
-      <meta
-        name="description"
-        content="Portfolio del desarrollador de software Iván Peña Huguet, especializado en JavaScript y Java"
+      <title>{t('head.title')}</title>
+      <meta name='description' content={t('head.description')} />
+      <link
+        id='favicon'
+        rel='icon'
+        href='favicon/favicon.gif'
+        type='image/gif'
       />
-      <link id="favicon" rel="icon" href="favicon/favicon.gif" />
     </Helmet>
   );
 }
