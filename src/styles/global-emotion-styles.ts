@@ -94,11 +94,11 @@ const globalEmotionStyles = css`
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
-  .linkactive {
-    color: #0f0 !important;
-  }
   .svgShadow {
     filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.3));
+  }
+  .p-dropdown-panel {
+    z-index: 1500 !important;
   }
 `;
 

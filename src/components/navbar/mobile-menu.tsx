@@ -60,21 +60,17 @@ const styles = {
   }
 };
 
-// const NavLink = styled.a({
-//   ...tw``,
-//   fontSize: "1.75rem",
-//   lineHeight: "3rem",
-// });
-// const SelectLanguageWrapper = styled.div({
-//   ...tw`text-base text-gray-600 pt-8`,
-// });
-
 const NavLink = styled.div(({ theme, active }: NavLinkProps) => ({
-  fontSize: '1.75rem',
-  lineHeight: '3rem'
+  fontSize: theme?.fonts.size.xxxlarge,
+  lineHeight: theme?.fonts.size.largest,
+  color: active ? theme?.colors.primaryAlternate : 'inherit'
 }));
 
-const SelectLanguageWrapper = styled.div({});
+const SelectLanguageWrapper = styled.div(({ theme }) => ({
+  fontSize: theme.fonts.size.large,
+  lineHeight: theme.fonts.size.large,
+  paddingTop: '2rem'
+}));
 
 export default function MobileMenu() {
   const { t } = useTranslation('common');
@@ -100,22 +96,17 @@ export default function MobileMenu() {
       {Links(t).map((link, i) => (
         <NavLink
           key={i}
-          active={location.pathname + location.hash === link.href}
+          active={
+            location.pathname + location.hash === link.href ||
+            (location.hash === '' &&
+              location.pathname === '/' &&
+              link.href === '/#introduction')
+          }
         >
           <NavHashLink to={link.href} smooth>
             {link.title}
           </NavHashLink>
         </NavLink>
-        // <NavLink
-        //   key={i}
-        //   href={link.href}
-        //   onClick={handleLinkClick}
-        //   className={
-        //     location.pathname + location.hash === link.href ? 'linkactive' : ''
-        //   }
-        // >
-        //   {link.title}
-        // </NavLink>
       ))}
       <SelectLanguageWrapper>
         <SelectLanguage />
