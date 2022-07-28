@@ -8,6 +8,8 @@ import MyPhoto from './imgcomponents/my-photo';
 import TextGhostAnimation from './animations/text-ghost-animation';
 import IntroductionChangeableText from './texts/introduction-changeable-text';
 import IntroductionText from './texts/introduction-text';
+import AboutMeText from './texts/about-me-text';
+import AboutMeSection from './sections/about-me-section';
 
 export {
   MainHead,
@@ -19,5 +21,7 @@ export {
   MyPhoto,
   TextGhostAnimation,
   IntroductionChangeableText,
-  IntroductionText
+  IntroductionText,
+  AboutMeText,
+  AboutMeSection
 };

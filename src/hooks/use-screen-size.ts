@@ -16,13 +16,15 @@ const getScreenResolution = () => {
   )
     return "md";
   else if (window.innerWidth >= breakpoints.md.max) return "lg";
-  return "xl";
+  return 'lg';
 };
 
 const useScreenSize = () => {
   const currentResolution = getScreenResolution();
 
-  const [resolution, setResolution] = useState(currentResolution);
+  const [resolution, setResolution] = useState<'lg' | 'xs' | 'sm' | 'md'>(
+    currentResolution
+  );
 
   useEffect(() => {
     const handleResize = () => {

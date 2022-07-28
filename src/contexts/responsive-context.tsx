@@ -1,3 +1,7 @@
 import { createContext } from "react";
 
-export const ResponsiveContext = createContext({ resolution: 'lg'});
+export type ResolutionOptions = 'xs' | 'sm' | 'md' | 'lg';
+
+export const ResponsiveContext = createContext<{
+  resolution: ResolutionOptions;
+}>({ resolution: 'lg' });

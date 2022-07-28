@@ -49,7 +49,7 @@ export default function NavBar() {
 
   return (
     <>
-      {deviceSize === 'lg' || deviceSize === 'md' || deviceSize === 'xl' ? (
+      {deviceSize === 'lg' || deviceSize === 'md' ? (
         <Header id='header'>
           <HeaderContainer>
             <Title>{t('navbar.nav.title')}</Title>

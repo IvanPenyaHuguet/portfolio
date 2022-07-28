@@ -66,7 +66,7 @@ const Container = styled.div(({ theme }) => ({
 
 export default function InitialSection() {
   return (
-    <SectionWrapper>
+    <SectionWrapper selector='introduction'>
       <BgContainer>
         <Container>
           <MyPhoto />

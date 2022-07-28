@@ -10,8 +10,16 @@ const Section = styled.section({
 
 type SectionWrapperProps = {
   children?: ReactElement;
+  selector: string;
 };
 
-export default function SectionWrapper({ children }: SectionWrapperProps) {
-  return <Section className='section'>{children}</Section>;
+export default function SectionWrapper({
+  children,
+  selector
+}: SectionWrapperProps) {
+  return (
+    <Section className='section' id={selector}>
+      {children}
+    </Section>
+  );
 }

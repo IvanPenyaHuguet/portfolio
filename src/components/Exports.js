@@ -1,12 +1,11 @@
 import SectionWrapper from "./sections/section-wrapper";
-import AboutMeSection from "./sections/AboutMeSection";
+import AboutMeSection from "./sections/about-me-section";
 import KnowledgeSection from "./sections/KnowledgeSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import ContactSection from "./sections/ContactSection";
 import Container from "./layouts/container/Container";
 import Tooltip from "./layouts/tooltip/Tooltip";
 import MainHead from "./head/main-head";
-import AboutMeText from "./texts/AboutMeText";
 import CardJS from "./cards/CardJS";
 import CardReact from "./cards/CardReact";
 import CardJava from "./cards/CardJava";
@@ -28,7 +27,6 @@ export {
   ContactSection,
   Container,
   MainHead,
-  AboutMeText,
   Tooltip,
   CardJS,
   GroupCardKnowledge,

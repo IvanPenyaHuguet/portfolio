@@ -53,10 +53,7 @@ const OptionCountryTemplate = (option: Country, showWidth?: boolean) => {
 export default function SelectLanguage() {
   const { t, i18n } = useTranslation();
   const responsiveSize = useResponsive();
-  const showWidth =
-    responsiveSize === 'lg' ||
-    responsiveSize === 'md' ||
-    responsiveSize === 'xl';
+  const showWidth = responsiveSize === 'lg' || responsiveSize === 'md';
 
   const LanguagesOptions = [
     {
@@ -76,7 +73,6 @@ export default function SelectLanguage() {
   );
 
   const handleLanguageChange = (event: { value: Country }) => {
-    console.log(event);
     const oldLanguage = language;
     setLanguage(event.value);
     i18n.changeLanguage(event.value.code).catch((err) => {
