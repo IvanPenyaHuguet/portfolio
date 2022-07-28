@@ -4,6 +4,8 @@ import { TextGhostAnimation } from '@components/index';
 import { useTranslation } from 'react-i18next';
 import styled from '@emotion/styled';
 
+const INTERVAL_PHRASES = 6000;
+
 const Wrapper = styled.div(({ theme }) => ({
   fontFamily: theme.fonts.code,
   letterSpacing: '0.025em',
@@ -41,7 +43,7 @@ export default function IntroductionChangeableText() {
       phrasesArray[Math.ceil(count % phrasesArray.length)].toUpperCase()
     );
     setCount(count + 1);
-  }, 6000);
+  }, INTERVAL_PHRASES);
 
   return (
     <Wrapper>

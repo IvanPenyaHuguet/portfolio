@@ -2,28 +2,40 @@ import { useTranslation } from 'react-i18next';
 import styled from '@emotion/styled';
 import { IntroductionChangeableText } from '@components/index';
 
-// const Text = styled.article({
-//   ...tw`text-black z-50 absolute
-//   left-0 bottom-0
-//   smland:static
-//   mdland:static
-//   lg:left-0 lg:bottom-0
-//   `
-// });
+const Text = styled.article(({ theme }) => ({
+  color: theme.colors.black,
+  zIndex: 50,
+  position: 'absolute',
+  left: 0,
+  bottom: 0,
+  [theme.media.smland]: {
+    position: 'static'
+  },
+  [theme.media.mdland]: {
+    position: 'static'
+  }
+}));
 
-// const Paragraph = styled.h4({
-//   ...tw`font-code leading-loose tracking-wider
-//     text-7xl font-bold
-//     xs:text-2xl
-//     sm:text-3xl
-//     smland:text-2xl
-//     mdland:text-4xl
-//   `
-// });
-
-const Text = styled.article({});
-
-const Paragraph = styled.h4({});
+const Paragraph = styled.h4(({ theme }) => ({
+  fontFamily: theme.fonts.code,
+  margin: 0,
+  lineHeight: 2,
+  fontSize: '4.5rem',
+  fontWeight: theme.fonts.weight.extrabold,
+  letterSpacing: '0.05em',
+  [theme.media.xs]: {
+    fontSize: theme.fonts.size.xxlarge
+  },
+  [theme.media.md]: {
+    fontSize: theme.fonts.size.xxxlarge
+  },
+  [theme.media.smland]: {
+    fontSize: theme.fonts.size.xxlarge
+  },
+  [theme.media.mdland]: {
+    fontSize: theme.fonts.size.largest
+  }
+}));
 
 export default function IntroductionText() {
   const { t } = useTranslation();
