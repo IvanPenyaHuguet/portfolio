@@ -1,8 +1,5 @@
-import SectionWrapper from "./sections/section-wrapper";
-import AboutMeSection from "./sections/about-me-section";
-import KnowledgeSection from "./sections/KnowledgeSection";
-import ProjectsSection from "./sections/ProjectsSection";
-import ContactSection from "./sections/ContactSection";
+import ProjectsSection from "./sections/projects-section";
+import ContactSection from "./sections/contact-section";
 import Container from "./layouts/container/Container";
 import Tooltip from "./layouts/tooltip/Tooltip";
 import MainHead from "./head/main-head";
@@ -20,9 +17,6 @@ import LogoTitle from "./cards/LogoTitle";
 import ScoreBar from "./cards/ScoreBar";
 
 export {
-  SectionWrapper,
-  AboutMeSection,
-  KnowledgeSection,
   ProjectsSection,
   ContactSection,
   Container,

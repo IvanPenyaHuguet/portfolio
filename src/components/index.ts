@@ -10,6 +10,10 @@ import IntroductionChangeableText from './texts/introduction-changeable-text';
 import IntroductionText from './texts/introduction-text';
 import AboutMeText from './texts/about-me-text';
 import AboutMeSection from './sections/about-me-section';
+import KnowledgeSection from './sections/knowledge-section';
+import GroupCardKnowledge from './cards/group-card-knowledge';
+import ProjectsSection from './sections/projects-section';
+import ContactSection from './sections/contact-section';
 
 export {
   MainHead,
@@ -23,5 +27,9 @@ export {
   IntroductionChangeableText,
   IntroductionText,
   AboutMeText,
-  AboutMeSection
+  AboutMeSection,
+  KnowledgeSection,
+  GroupCardKnowledge,
+  ProjectsSection,
+  ContactSection
 };
