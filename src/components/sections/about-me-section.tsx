@@ -7,6 +7,7 @@ const BgContainer = styled.div({
   width: '100%',
   height: '100%',
   position: 'relative',
+  zIndex: 1,
   '&:before': {
     content: "''",
     position: 'absolute',
