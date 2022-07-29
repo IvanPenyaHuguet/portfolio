@@ -60,6 +60,15 @@
       }
     }
   },
+  "contact": {
+    "title": "¡Contáctame!",
+    "legend": "Formulario de contacto a rellenar",
+    "labels": {
+      "email": "Correo electrónico",
+      "name": "Nombre",
+      "message": "Mensaje"
+    }
+  },
   "language": {
     "select": "Cambiar lenguaje",
     "spanish": "Español",

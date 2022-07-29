@@ -14,6 +14,9 @@ import KnowledgeSection from './sections/knowledge-section';
 import GroupCardKnowledge from './cards/group-card-knowledge';
 import ProjectsSection from './sections/projects-section';
 import ContactSection from './sections/contact-section';
+import ContactForm from './forms/contact-form';
+import InputText from './forms/input-text';
+import InputTextArea from './forms/text-area';
 
 export {
   MainHead,
@@ -31,5 +34,8 @@ export {
   KnowledgeSection,
   GroupCardKnowledge,
   ProjectsSection,
-  ContactSection
+  ContactSection,
+  ContactForm,
+  InputText,
+  InputTextArea
 };

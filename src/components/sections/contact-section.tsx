@@ -1,4 +1,4 @@
-import { SectionWrapper } from '@components/index';
+import { SectionWrapper, ContactForm } from '@components/index';
 import styled from '@emotion/styled';
 
 const BgContainer = styled.div({
@@ -8,8 +8,14 @@ const BgContainer = styled.div({
 });
 
 const TextContainer = styled.div({});
+
 const Container = styled.div({
-  zIndex: 10
+  zIndex: 10,
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: '100%',
+  width: '75%'
 });
 
 export default function ContactSection() {
@@ -17,7 +23,8 @@ export default function ContactSection() {
     <SectionWrapper selector='contact'>
       <BgContainer>
         <Container>
-          <span>{'contact'}</span>
+          <h5>{'contact'}</h5>
+          <ContactForm />
         </Container>
       </BgContainer>
     </SectionWrapper>
