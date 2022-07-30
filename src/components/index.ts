@@ -17,6 +17,7 @@ import ContactSection from './sections/contact-section';
 import ContactForm from './forms/contact-form';
 import InputText from './forms/input-text';
 import InputTextArea from './forms/text-area';
+import Button from './buttons/button';
 
 export {
   MainHead,
@@ -37,5 +38,6 @@ export {
   ContactSection,
   ContactForm,
   InputText,
-  InputTextArea
+  InputTextArea,
+  Button
 };

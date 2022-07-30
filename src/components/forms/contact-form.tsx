@@ -2,16 +2,22 @@ import styled from '@emotion/styled';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import { InputText, InputTextArea } from '@components/index';
+import { InputText, InputTextArea, Button } from '@components/index';
 import { useTranslation } from 'react-i18next';
 
 interface IFormInputs {
   name: string;
-  email: number;
+  email: string;
   message: string;
 }
 
 const FormContainer = styled.div({});
+
+const Formfieldset = styled.fieldset(({ theme }) => ({
+  backgroundColor: theme.colors.white,
+  border: 'none',
+  boxShadow: theme.shadows.normal
+}));
 
 const ValidationSchema = yup
   .object({
@@ -32,7 +38,12 @@ export default function ContactForm() {
     handleSubmit,
     formState: { errors }
   } = useForm<IFormInputs>({
-    resolver: yupResolver(ValidationSchema)
+    resolver: yupResolver(ValidationSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+      message: ''
+    }
   });
 
   const onSubmit = (data: IFormInputs) => console.log(data);
@@ -41,7 +52,7 @@ export default function ContactForm() {
     <FormContainer>
       {/* eslint-disable-next-line */}
       <form onSubmit={handleSubmit(onSubmit)}>
-        <fieldset>
+        <Formfieldset>
           <legend className='sr-only'>{t('contact.legend')}</legend>
           <InputText
             type='email'
@@ -62,9 +73,8 @@ export default function ContactForm() {
             errorMessage={errors.message?.message}
             {...register('message')}
           />
-          {/* <input {...register('name')} />
-          <p>{errors.name?.message}</p> */}
-        </fieldset>
+          <Button type='submit'>{'Submit'}</Button>
+        </Formfieldset>
       </form>
     </FormContainer>
   );
