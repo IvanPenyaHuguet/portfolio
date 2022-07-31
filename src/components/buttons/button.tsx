@@ -13,7 +13,7 @@ const ButtonStyled = styled.button(({ disabled, theme }) => ({
   alignItems: 'center',
   justifyContent: 'center',
   cursor: disabled ? 'not-allowed' : 'pointer',
-  border: '2px solid #fff'
+  border: `2px solid ${theme.colors.white}`
 }));
 
 const Button: FC<ButtonProps> = ({
