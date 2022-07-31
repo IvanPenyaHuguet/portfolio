@@ -4,7 +4,7 @@
 
 To fully test the page in local you need to create a .env file with the following keys:
 
-```
+```text
 VITE_FORMSPARK_FORM_ID=key
 VITE_BOTPOISON_PUBLIC_KEY=key
 ```
