@@ -1,21 +1,8 @@
-import SectionWrapper from "./sections/SectionWrapper";
-import InitialSection from "./sections/InitialSection";
-import AboutMeSection from "./sections/AboutMeSection";
-import KnowledgeSection from "./sections/KnowledgeSection";
-import ProjectsSection from "./sections/ProjectsSection";
-import ContactSection from "./sections/ContactSection";
+import ProjectsSection from "./sections/projects-section";
+import ContactSection from "./sections/contact-section";
 import Container from "./layouts/container/Container";
 import Tooltip from "./layouts/tooltip/Tooltip";
-import MainHead from "./head/MainHead";
-import NavBar from "./navbar/Nav";
-import NavLinks from "./navbar/NavLinks";
-import MobileMenu from "./navbar/MobileMenu";
-import MyPhoto from "./imgcomponents/MyPhoto";
-import AboutMeText from "./texts/AboutMeText";
-import IntroductionText from "./texts/IntroductionText";
-import IntroductionChangeableText from "./texts/IntroductionChangeableText";
-import TextGhostAnimation from "./animations/TextGhostAnimation";
-import SelectLanguage from "./forms/SelectLanguage";
+import MainHead from "./head/main-head";
 import CardJS from "./cards/CardJS";
 import CardReact from "./cards/CardReact";
 import CardJava from "./cards/CardJava";
@@ -30,24 +17,11 @@ import LogoTitle from "./cards/LogoTitle";
 import ScoreBar from "./cards/ScoreBar";
 
 export {
-  SectionWrapper,
-  InitialSection,
-  AboutMeSection,
-  KnowledgeSection,
   ProjectsSection,
   ContactSection,
   Container,
   MainHead,
-  NavBar,
-  NavLinks,
-  MobileMenu,
-  MyPhoto,
-  AboutMeText,
-  IntroductionText,
-  TextGhostAnimation,
-  IntroductionChangeableText,
   Tooltip,
-  SelectLanguage,
   CardJS,
   GroupCardKnowledge,
   DescriptionContainer,

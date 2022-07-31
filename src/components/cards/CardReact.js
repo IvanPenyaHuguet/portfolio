@@ -1,7 +1,7 @@
 import tw, { styled, theme } from "twin.macro";
 import { ReactLogo } from "media/svg/SVGExports";
 import { useResponsiveContext } from "hooks/HookExports";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 import {
   DescriptionContainer,
   DescriptionText,

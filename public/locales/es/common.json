@@ -1,6 +1,7 @@
 {
   "head": {
-    "title": "Iván Peña Portfolio"
+    "title": "Iván Peña Portfolio",
+    "description": "Portfolio del desarrollador de software Iván Peña Huguet, especialista en JavaScript"
   },
   "nav": {
     "link": {
@@ -24,7 +25,7 @@
       "third": "Realicé el fp superior de desarrollo web, dónde aprendí mayormente Java y por mi cuenta decidí especializarme en las tecnologías front-end de JavaScript, porque creo que son el futuro de las aplicaciones. Actualmente busco crecer y ampliar mis conocimientos en dicho campo, creando aplicaciones más innovadoras."
     },
     "introduction": {
-      "firstintline": "Bienvenido!",
+      "firstintline": "¡Bienvenido!",
       "secondline": {
         "firstwords": "Cuando lo importante es ",
         "innovation": "la innovación",
@@ -57,6 +58,15 @@
           "description2": "Estuve trabajando con él durante mi estancia en pfsGroup y he realizado varios proyectos, disponibles abajo utilizándolo en el back-end."
         }
       }
+    }
+  },
+  "contact": {
+    "title": "¡Contáctame!",
+    "legend": "Formulario de contacto a rellenar",
+    "labels": {
+      "email": "Correo electrónico",
+      "name": "Nombre",
+      "message": "Mensaje"
     }
   },
   "language": {

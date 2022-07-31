@@ -25,7 +25,7 @@ const Container = styled.div(({ color, content }) => ({
     clipPath: "circle(150px at 90% -20%)",
   },
   "&:after": {
-    content: content,
+    content,
     position: "absolute",
     top: "70%",
     left: "50%",
