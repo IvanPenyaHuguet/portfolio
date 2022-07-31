@@ -2,11 +2,15 @@ import styled from '@emotion/styled';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useFormspark } from '@formspark/use-formspark';
+import Botpoison from '@botpoison/browser';
 import * as yup from 'yup';
 import { InputText, InputTextArea, Button } from '@components/index';
 import { useTranslation } from 'react-i18next';
 
 const FORMSPARK_FORM_ID = import.meta.env.VITE_FORMSPARK_FORM_ID;
+const botpoison = new Botpoison({
+  publicKey: import.meta.env.VITE_BOTPOISON_PUBLIC_KEY
+});
 
 interface IFormInputs {
   name: string;
@@ -53,7 +57,7 @@ export default function ContactForm() {
   });
 
   const onSubmit = async (data: IFormInputs) => {
-    console.log(FORMSPARK_FORM_ID);
+    const { solution } = await botpoison.challenge();
     await submit({
       email: data.email,
       name: data.name,
@@ -61,7 +65,8 @@ export default function ContactForm() {
       _email: {
         from: data.name,
         subject: 'New Message Portfolio Contact Form from ' + data.email
-      }
+      },
+      _botpoison: solution
     });
   };
 
