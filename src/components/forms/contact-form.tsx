@@ -1,9 +1,12 @@
 import styled from '@emotion/styled';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useFormspark } from '@formspark/use-formspark';
 import * as yup from 'yup';
 import { InputText, InputTextArea, Button } from '@components/index';
 import { useTranslation } from 'react-i18next';
+
+const FORMSPARK_FORM_ID = import.meta.env.VITE_FORMSPARK_FORM_ID;
 
 interface IFormInputs {
   name: string;
@@ -33,6 +36,9 @@ const ValidationSchema = yup
 
 export default function ContactForm() {
   const { t } = useTranslation();
+  const [submit] = useFormspark({
+    formId: FORMSPARK_FORM_ID
+  });
   const {
     register,
     handleSubmit,
@@ -46,7 +52,18 @@ export default function ContactForm() {
     }
   });
 
-  const onSubmit = (data: IFormInputs) => console.log(data);
+  const onSubmit = async (data: IFormInputs) => {
+    console.log(FORMSPARK_FORM_ID);
+    await submit({
+      email: data.email,
+      name: data.name,
+      message: data.message,
+      _email: {
+        from: data.name,
+        subject: 'New Message Portfolio Contact Form from ' + data.email
+      }
+    });
+  };
 
   return (
     <FormContainer>
